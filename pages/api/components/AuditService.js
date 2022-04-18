@@ -21,43 +21,43 @@ import { useState } from 'react';
 
     function MoreInformation() {
         return (
-            <div class="form-control w-full max-w-xs">
-            <label class="label">
-                <span class="label-text">Please describe</span>
+            <div className="form-control w-full max-w-xs">
+            <label className="label">
+                <span className="label-text">Please describe</span>
             </label>
-            <input type="text" placeholder="Other" class="input input-bordered input-primary w-full max-w-xs"/>
+            <input type="text" placeholder="Other" className="input input-bordered input-primary w-full max-w-xs"/>
         </div>
         );
     }
 
     return (
-        <div class="flex flex-col w-full p-10">
-            <div class = "grid grid-cols-3 gap-4 place-items-start">
+        <div className="flex flex-col w-full p-10">
+            <div className = "grid grid-cols-3 gap-4 place-items-start">
                 <form>
-                <div class="form-control w-full max-w-xs">
-                        <label class="label">
-                            <span class="label-text">Company name or N/A</span>
+                <div className="form-control w-full max-w-xs">
+                        <label className="label">
+                            <span className="label-text">Company name or N/A</span>
                         </label>
-                        <input type="text" placeholder="Company Name" class="input input-bordered input-primary w-full max-w-xs"/>
+                        <input type="text" placeholder="Company Name" className="input input-bordered input-primary w-full max-w-xs"/>
                     </div>
 
-                    <div class="form-control">
-                        <label class="label cursor-pointer">
-                            <span class="label-text">Audited data will need to be corrected</span> 
-                            <input type="radio" name="radio-6" class="radio checked:bg-primary" checked/>
+                    <div className="form-control">
+                        <label className="label cursor-pointer">
+                            <span className="label-text">Audited data will need to be corrected</span> 
+                            <input type="radio" name="radio-6" className="radio checked:bg-primary" checked/>
                         </label>
                         </div>
-                        <div class="form-control">
-                        <label class="label cursor-pointer">
-                            <span class="label-text">Audited data will not need to be corrected</span> 
-                            <input type="radio" name="radio-6" class="radio checked:bg-accent-content" checked/>
+                        <div className="form-control">
+                        <label className="label cursor-pointer">
+                            <span className="label-text">Audited data will not need to be corrected</span> 
+                            <input type="radio" name="radio-6" className="radio checked:bg-accent-content" checked/>
                         </label>
                     </div>
 
-                <label class="label">
-                        <span class="label-text">How will your data be read?</span>
+                <label className="label">
+                        <span className="label-text">How will your data be read?</span>
                     </label>
-                    <select class="select select-primary w-full max-w-xs" onChange={handleChange} >
+                    <select className="select select-primary w-full max-w-xs" onChange={handleChange} >
                         <option disabled selected>Select</option>
                         <option value="xml">XML</option>
                         <option value="json">JSON</option>
@@ -66,10 +66,10 @@ import { useState } from 'react';
                     </select>
                     {selectOther()}
 
-                    <label class="label">
-                        <span class="label-text">What is the nature of the data being audited?</span>
+                    <label className="label">
+                        <span className="label-text">What is the nature of the data being audited?</span>
                     </label>
-                    <select class="select select-primary w-full max-w-xs" onChange={handleChange} >
+                    <select className="select select-primary w-full max-w-xs" onChange={handleChange} >
                         <option disabled selected>Select</option>
                         <option value="accounting">Accounting</option>
                         <option value="operational">Operational</option>
@@ -78,15 +78,15 @@ import { useState } from 'react';
                     </select>
                     {selectOther()}
                     
-                    <label class="label">
-                        <span class="label-text">Please describe what most conserns you about your data currently:</span>
+                    <label className="label">
+                        <span className="label-text">Please describe what most conserns you about your data currently:</span>
                     </label>
-                    <textarea class="textarea textarea-primary" placeholder="Description"></textarea>
+                    <textarea className="textarea textarea-primary" placeholder="Description"></textarea>
 
-                    <label class="label">
-                        <span class="label-text">What is your expectation on timing?</span>
+                    <label className="label">
+                        <span className="label-text">What is your expectation on timing?</span>
                     </label>
-                    <select class="select select-primary w-full max-w-xs" onChange={handleChange}>
+                    <select className="select select-primary w-full max-w-xs" onChange={handleChange}>
                         <option disabled selected>Select</option>
                         <option value="week">This project should be completed in a week or two</option>
                         <option value="month">This project will take likely take a month</option>
@@ -96,10 +96,10 @@ import { useState } from 'react';
                     </select>
                     {selectOther()}
 
-                    <label class="label">
-                        <span class="label-text">Is there anything else you would like to be considered?</span>
+                    <label className="label">
+                        <span className="label-text">Is there anything else you would like to be considered?</span>
                     </label>
-                    <textarea class="textarea textarea-primary" placeholder="Description"></textarea>
+                    <textarea className="textarea textarea-primary" placeholder="Description"></textarea>
                 </form>
             </div>
         </div>
