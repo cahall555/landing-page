@@ -1,6 +1,7 @@
 import 'tailwindcss/tailwind.css'
 import Head from 'next/head'
 import React from 'react'
+import Link from 'next/link'
 // import Image from 'next/image'
 // import styles from '../styles/Home.module.css'
 
@@ -20,7 +21,12 @@ export default function Home() {
           <div className="max-w-md">
             <h1 className="mb-5 text-5xl font-bold">Hello</h1>
             <p className="mb-5">I am working on my BS in Computer Science. </p>
-            <button className="btn btn-primary">See Projects</button>
+            <div className = "space-x-4">
+                <button className="btn btn-primary">See Projects</button>
+              <Link href="/rfp">
+                <button className="btn btn-primary">Work With Me</button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

@@ -1,0 +1,104 @@
+import 'tailwindcss/tailwind.css'
+import { useState } from 'react';
+import React from 'react';
+import Link from 'next/link'
+import AuditService from './api/components/AuditService';
+import FormService from './api/components/FormService';
+
+export default function Rfp() {
+    const [formType, setFormType] = useState(undefined);
+
+    function handleChange(event) {
+        setFormType(event.target.value);
+    };
+
+   function serviceType() {
+        if (formType == "audit") {
+            return <AuditService />
+        } else if (formType =="form") {
+            return <FormService />
+        } else {
+            return <></>
+        }
+    };
+
+  
+    return (
+        <div data-theme="garden">
+        <div class="navbar bg-neutral text-neutral-content">
+            <div class="navbar-start">
+                <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-neutral text-neutral-content rounded-box w-52">
+                <Link href="/">
+                    <li><a>Portfolio</a></li>
+                </Link>
+                    <li><a>About</a></li>
+                </ul>
+                </div>
+            </div>
+            <div class="navbar-center">
+                <a class="btn btn-ghost normal-case text-xl">Request for Proposal</a>
+            </div>
+            <div class="navbar-end">
+                <button class="btn btn-ghost btn-circle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                </button>
+                <button class="btn btn-ghost btn-circle">
+                <div class="indicator">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /></svg>
+                    <span class="badge badge-xs badge-primary indicator-item"></span>
+                </div>
+                </button>
+            </div>
+            </div>
+
+        <form>
+            <div class="flex flex-col w-full p-8">
+                <div class="grid h-20 card bg-primary text-primary-content rounded-box place-items-center">Contact Information</div> 
+                <div class="flex justify-center justify-around">
+                    <div class="form-control w-full max-w-xs">
+                        <label class="label">
+                            <span class="label-text">First Name</span>
+                        </label>
+                        <input type="text" placeholder="First Name" class="input input-bordered input-primary w-full max-w-xs"/>
+                    </div>
+                    <div class="form-control w-full max-w-xs">
+                        <label class="label">
+                            <span class="label-text">Last Name</span>
+                        </label>
+                        <input type="text" placeholder="Last Name" class="input input-bordered input-primary w-full max-w-xs"/>
+                    </div>
+                    <div class="form-control w-full max-w-xs">
+                        <label class="label">
+                            <span class="label-text">Email Address</span>
+                        </label>
+                        <input type="email" placeholder="Email Address" class="input input-bordered input-primary w-full max-w-xs"/>
+                    </div>
+                    <div class="form-control w-full max-w-xs">
+                        <label class="label">
+                            <span class="label-text">Phone Number</span>
+                        </label>
+                        <input type="phone" placeholder="Phone Number" class="input input-bordered input-primary w-full max-w-xs"/>
+                    </div>
+                </div>
+                <div class="divider"></div> 
+                <div class="grid h-20 card bg-primary text-primary-content rounded-box place-items-center">Project Information</div>
+                
+                <div class = "flex justify-center justify-around py-8">
+                    <select id="serviceType" class="select select-primary w-full max-w-xs" onChange={handleChange}>
+                    <option disabled selected>Select service</option>
+                        <option value="audit">Audit and Data Clean-up</option>
+                        <option value="form">Create a Form</option>
+                    </select>
+                    {serviceType()}
+                </div>
+
+                <button class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+    )
+}
