@@ -24,7 +24,7 @@ export default function Rfp() {
 
   
     return (
-        <div data-theme="garden">
+        <div className = "text-center sm:text-left" data-theme="garden">
         <div className="navbar bg-neutral text-neutral-content">
             <div className="navbar-start">
                 <div className="dropdown">
@@ -58,7 +58,7 @@ export default function Rfp() {
         <form>
             <div className="flex flex-col w-full p-8">
                 <div className="grid h-20 card bg-primary text-primary-content rounded-box place-items-center">Contact Information</div> 
-                <div className="flex justify-center justify-around">
+                <div className="flex justify-center justify-around flex-wrap">
                     <div className="form-control w-full max-w-xs">
                         <label className="label">
                             <span className="label-text">First Name</span>
@@ -87,15 +87,15 @@ export default function Rfp() {
                 <div className="divider"></div> 
                 <div className="grid h-20 card bg-primary text-primary-content rounded-box place-items-center">Project Information</div>
                 
-                <div className = "flex justify-center justify-around py-8">
+                <div className = "flex justify-center py-8 flex-wrap">
                     <select id="serviceType" className="select select-primary w-full max-w-xs" onChange={handleChange}>
                     <option disabled selected>Select service</option>
                         <option value="audit">Audit and Data Clean-up</option>
                         <option value="form">Create a Form</option>
                     </select>
-                    {serviceType()}
                 </div>
-
+                {serviceType()}
+                <div className = "pb-8"></div>
                 <button className="btn">Submit</button>
             </div>
         </form>
