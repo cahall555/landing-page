@@ -5,21 +5,71 @@ import { useState } from 'react';
 
   export default function AuditService() {
 
-    const [otherOption, setOtherOption] = useState(undefined);
+    const [formatOption, setFormatOption] = useState(undefined);
 
-    function handleChange(event) {
-        setOtherOption(event.target.value);
+    const [typeOption, setTypeOption] = useState(undefined);
+
+    const [timeOption, setTimeOption] = useState(undefined);
+
+    function formatChange(event) {
+        setFormatOption(event.target.value);
     };
 
-   function selectOther() {
-        if (otherOption == "other") {
-            return <MoreInformation />
+    function typeChange(event) {
+        setTypeOption(event.target.value);
+    };
+
+    function timeChange(event) {
+        setTimeOption(event.target.value);
+    };
+
+   function otherFormat() {
+        if (formatOption == "otherFormat") {
+            return <FormatInformation />
         } else {
             return <></>
         }
     };
+    
+    function otherType() {
+        if (typeOption == "otherType") {
+            return <TypeInformation />
+        }else {
+            return <></>
+        }
+    };
 
-    function MoreInformation() {
+    function otherTime() {
+        if (timeOption == "otherTime") {
+            return <TimeInformation />
+        }else {
+            return <></>
+        }
+    };
+
+    function FormatInformation() {
+        return (
+            <div className="form-control w-full max-w-md">
+            <label className="label">
+                <span className="label-text">Please describe</span>
+            </label>
+            <input type="text" placeholder="Other" className="input input-bordered input-primary w-full max-w-md"/>
+        </div>
+        );
+    }
+
+    function TypeInformation() {
+        return (
+            <div className="form-control w-full max-w-md">
+            <label className="label">
+                <span className="label-text">Please describe</span>
+            </label>
+            <input type="text" placeholder="Other" className="input input-bordered input-primary w-full max-w-md"/>
+        </div>
+        );
+    }
+
+    function TimeInformation() {
         return (
             <div className="form-control w-full max-w-md">
             <label className="label">
@@ -52,26 +102,26 @@ import { useState } from 'react';
             <label className="label">
                     <span className="label-text text-left">What file format will your data be in?</span>
                 </label>
-                <select className="select select-primary w-full max-w-md" onChange={handleChange} >
+                <select className="select select-primary w-full max-w-md" onChange={formatChange} >
                     <option disabled selected>Select</option>
                     <option value="xml">XML</option>
                     <option value="json">JSON</option>
                     <option value="csv">CSV</option>
-                    <option value="other">Other</option>
+                    <option value="otherFormat">Other</option>
                 </select>
-                {selectOther()}
+                {otherFormat()}
 
                 <label className="label">
                     <span className="label-text text-left">What is the nature of the data being audited?</span>
                 </label>
-                <select className="select select-primary w-full max-w-md" onChange={handleChange} >
+                <select className="select select-primary w-full max-w-md" onChange={typeChange} >
                     <option disabled selected>Select</option>
                     <option value="accounting">Accounting</option>
                     <option value="operational">Operational</option>
                     <option value="both">Both</option>
-                    <option value="other">Other</option>
+                    <option value="otherType">Other</option>
                 </select>
-                {selectOther()}
+                {otherType()}
                 
                 <label className="label">
                     <span className="label-text text-left">Please describe what most conserns you about your data currently:</span>
@@ -81,15 +131,15 @@ import { useState } from 'react';
                 <label className="label">
                     <span className="label-text text-left">What is your expectation on timing?</span>
                 </label>
-                <select className="select select-primary w-full max-w-md" onChange={handleChange}>
+                <select className="select select-primary w-full max-w-md" onChange={timeChange}>
                     <option disabled selected>Select</option>
                     <option value="week">One to two weeks</option>
                     <option value="month">Month</option>
                     <option value="quarter">Three months</option>
                     <option value="ongoing">Ongoing project</option>
-                    <option value="other">Other</option>
+                    <option value="otherTime">Other</option>
                 </select>
-                {selectOther()}
+                {otherTime()}
 
                 <label className="label">
                     <span className="label-text text-left">Is there anything else you would like to be considered?</span>
