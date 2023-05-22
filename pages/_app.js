@@ -1,4 +1,6 @@
 import "../styles/globals.css";
+import Head from "next/head";
+
 import { Cinzel, Arapey, Bebas_Neue } from "next/font/google";
 
 const cinzel = Cinzel({
@@ -22,6 +24,15 @@ const bebasneue = Bebas_Neue({
 export default function MyApp({ Component, pageProps }) {
 	return (
 		<>
+			<Head>
+				<title>Portfolio</title>
+				<meta
+					name="Portfolio"
+					content="Full-stack developer portfolio"
+				/>
+				<link rel="icon" href="/favicon.ico" />
+			</Head>
+
 			<div className={`${cinzel.variable} font-cinzel`}>
 				<div
 					className={`${arapey.variable} font-arapey`}

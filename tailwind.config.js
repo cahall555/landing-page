@@ -7,16 +7,17 @@ module.exports = {
 	theme: {
 		colors: {
 			background: "#EAE1DF",
-			gray: "#545E56",
+			gray: "#D9D9D9",
 			"light-gray": "#667761",
 			brown: "#917C78",
 			"dark-green": "#545E56",
 			"light-green": "#667761",
+			rose: "#917C78",
 		},
 		extend: {
 			fontFamily: {
 				arapey: ["var(--font-arapey)"],
-				bebas: ["var(--font-bebasneue)"],
+				bebasneue: ["var(--font-bebasneue)"],
 				cinzel: ["var(--font-cinzel)"],
 			},
 		},
