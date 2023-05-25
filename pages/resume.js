@@ -34,6 +34,53 @@ export default function Resume() {
 							augue. Integer quis
 							auctor elit sed.
 						</p>
+						<h3 className="font-bebasneue text-lg mt-8">
+							Product Manager | Data
+							Integrations Manager:
+							January 2019 - June 2022
+						</h3>
+						<p className="font-arapey mt-4">
+							Lorem ipsum dolor sit
+							amet, consectetur
+							adipiscing elit, sed do
+							eiusmod tempor
+							incididunt ut labore et
+							dolore magna aliqua.
+							Erat pellentesque
+							adipiscing commodo elit
+							at imperdiet dui
+							accumsan sit. Est sit
+							amet facilisis magna
+							etiam tempor. Lectus
+							nulla at volutpat diam
+							ut venenatis. Orci ac
+							auctor augue mauris
+							augue. Integer quis
+							auctor elit sed.
+						</p>
+						<h3 className="font-bebasneue text-lg mt-8">
+							Senior IT Specialist:
+							January 2012 - December 2018
+						</h3>
+						<p className="font-arapey mt-4">
+							Lorem ipsum dolor sit
+							amet, consectetur
+							adipiscing elit, sed do
+							eiusmod tempor
+							incididunt ut labore et
+							dolore magna aliqua.
+							Erat pellentesque
+							adipiscing commodo elit
+							at imperdiet dui
+							accumsan sit. Est sit
+							amet facilisis magna
+							etiam tempor. Lectus
+							nulla at volutpat diam
+							ut venenatis. Orci ac
+							auctor augue mauris
+							augue. Integer quis
+							auctor elit sed.
+						</p>
 					</div>
 					<div className="flex flex-col mt-16 px-32">
 						<h1 className="font-bebasneue text-2xl border-b-2">
