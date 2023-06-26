@@ -4,10 +4,10 @@ import Header from "./components/header";
 export default function Resume() {
 	return (
 		<>
-			<div className="flex flex-col h-screen w-full mx-auto bg-background">
+			<div className="h-screen w-full mx-auto bg-background">
 				<Header />
-				<div className="flex flex-row justify-items-center">
-					<div className="flex flex-col mt-16 px-32">
+				<div className="flex flex-col sm:flex-row justify-items-center bg-background">
+					<div className="flex flex-col mt-16 px-12 sm:px-32">
 						<h1 className="font-bebasneue text-2xl border-b-2">
 							Work Experience
 						</h1>
@@ -82,7 +82,7 @@ export default function Resume() {
 							auctor elit sed.
 						</p>
 					</div>
-					<div className="flex flex-col mt-16 px-32">
+					<div className="flex flex-col mt-16 px-12 sm:px-32">
 						<h1 className="font-bebasneue text-2xl border-b-2">
 							Skills
 						</h1>

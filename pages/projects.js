@@ -4,13 +4,13 @@ import Header from "./components/header";
 export default function Projects() {
 	return (
 		<>
-			<div className="flex flex-col h-screen w-full mx-auto bg-background">
+			<div className="h-screen w-full mx-auto bg-background">
 				<Header />
-				<div className="flex flex-col items-center h-screen w-full px-32 pt-16">
+				<div className="flex flex-col items-center h-screen w-full px-12 sm:px-32 pt-16 bg-background">
 					<h1 className="font-bebasneue text-2xl">
 						Document Manager
 					</h1>
-					<div className="flex flex-row gap-11 mt-2">
+					<div className="flex flex-col sm:flex-row gap-11 mt-2">
 						<div className="flex flex-row gap-2">
 							<h3 className="font-bebasneue text-xl">
 								GitHub:

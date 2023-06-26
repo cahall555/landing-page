@@ -4,10 +4,10 @@ import Header from "./components/header";
 export default function Home() {
 	return (
 		<>
-			<div className="flex flex-col h-screen w-full mx-auto bg-background">
+			<div className="h-screen w-full mx-auto bg-background">
 				<Header />
 				<div className="flex flex-col">
-					<div className="flex flex-row text-brown font-cinzel text-5xl mt-16 justify-center gap-16 px-32">
+					<div className="flex flex-row text-brown font-cinzel text-5xl mt-16 justify-center gap-16 px-12 sm:px-32">
 						<div className="h-96 basis-1/4 bg-light-green rounded-xl drop-shadow-2xl"></div>
 						<div className="basis-3/4 flex flex-col justify-center">
 							<h1>Headline</h1>
