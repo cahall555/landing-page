@@ -21,7 +21,7 @@ const Header = () => {
 							Resume
 						</Link>
 					</h2>
-					<h2 className="font-bebasneue border-t-2 border-dark-green pt-4">
+					<h2 className="hidden font-bebasneue border-t-2 border-dark-green pt-4">
 						Contact Me
 					</h2>
 				</div>
