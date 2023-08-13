@@ -113,7 +113,7 @@ export default function Projects() {
 						hosted on in an S3 bucket. This
 						is an active company website
 						that caters to small businesses
-						in the Carribean.
+						in the Caribbean.
 					</p>
 				</div>
 			</div>

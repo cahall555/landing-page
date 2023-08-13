@@ -32,7 +32,7 @@ export default function Resume() {
 							Saas based company
 							working to help small
 							businesses in the
-							Carribean expand their
+							Caribbean expand their
 							online presence.
 						</p>
 						<ul className="font-arapey mt-4 list-disc indent-8">
