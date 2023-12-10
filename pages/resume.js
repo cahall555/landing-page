@@ -214,7 +214,7 @@ export default function Resume() {
 						<div className="ml-8">
 							<ul className="font-arapey mt-4 list-disc list-outside">
 								<li>
-									Oversee
+									Oversaw
 									outsourced
 									technology
 									solution
@@ -236,7 +236,8 @@ export default function Resume() {
 									nationwide.
 								</li>
 								<li>
-									Serve as
+									Served
+									as
 									Network
 									Administrator,
 									assuring
@@ -253,10 +254,10 @@ export default function Resume() {
 									devices.
 								</li>
 								<li>
-									Anticipate,
-									test,
+									Anticipated,
+									tested,
 									and
-									address
+									addressed
 									security
 									concerns
 									to
@@ -265,14 +266,14 @@ export default function Resume() {
 									maintain
 									network
 									integrity.
-									Create
+									Created
 									policies/set
 									guidelines
 									for
 									vendor
 									network
 									access,
-									evaluate
+									evaluated
 									network
 									peripherals
 									for
@@ -280,7 +281,7 @@ export default function Resume() {
 									security
 									vulnerabilities,
 									and
-									define
+									defined
 									geographic
 									location
 									of
@@ -288,7 +289,7 @@ export default function Resume() {
 									equipment.
 								</li>
 								<li>
-									Direct
+									Directed
 									system
 									migrations,
 									including
@@ -313,19 +314,21 @@ export default function Resume() {
 									365.
 								</li>
 								<li>
-									Initiate
+									Initiated
 									and
-									track{" "}
+									tracked{" "}
 									{">"}$2M
 									in wire
 									payments
 									monthly.
-									Support
+									Supported
 									treasury
 									operations
 									as
 									needed.
-									Create
+								</li>
+								<li>
+									Created
 									IT
 									expense
 									projection
@@ -416,7 +419,7 @@ export default function Resume() {
 									wire
 									fees by
 									$25K
-									annually.{" "}
+									annually.
 								</li>
 								<li>
 									Identified
@@ -453,7 +456,7 @@ export default function Resume() {
 									with a
 									live
 									discussion
-									option.{" "}
+									option.
 								</li>
 								<li>
 									Conducted
@@ -477,7 +480,7 @@ export default function Resume() {
 									and
 									international
 									EFT
-									transactions.{" "}
+									transactions.
 								</li>
 								<li>
 									Supported
@@ -489,7 +492,7 @@ export default function Resume() {
 									international
 									real
 									estate
-									holdings.{" "}
+									holdings.
 								</li>
 							</ul>
 						</div>
