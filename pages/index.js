@@ -6,12 +6,12 @@ export default function Home() {
 		<>
 			<div className="h-screen w-full mx-auto bg-background">
 				<Header />
-				<div className="flex flex-col">
-					<div className="flex flex-row text-brown font-cinzel text-5xl mt-16 justify-center gap-16 px-12 sm:px-32">
-						<div className="h-96 basis-1/4 bg-light-green rounded-xl drop-shadow-2xl"></div>
-						<div className="basis-3/4 flex flex-col justify-center">
+				<div className="flex flex-col bg-background">
+					<div className="flex flex-col md:flex-row text-brown font-cinzel text-5xl mt-16 justify-center gap-16 px-12 md:px-32">
+						<div className="h-96 md:basis-1/4 bg-center bg-cover bg-[url('/picture.jpg')] rounded-xl drop-shadow-2xl"></div>
+						<div className="md:basis-3/4 flex flex-col justify-center">
 							<h1>About me</h1>
-							<p className="font-arapey text-lg">
+							<p className="font-arapey text-lg mt-2">
 								My career path
 								has allowed me
 								to work in a
