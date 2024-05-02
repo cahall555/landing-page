@@ -1,3 +1,53 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+h3 {
+  font-weight: bold;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 2.0rem;
+  color: #545E56;
+}
+
+p {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.75rem;
+}
+
+li {
+  list-style-type: disc;
+  list-style-position: inside;
+  line-height: 1.75rem;
+}
+
+
+code {
+    background-color: #917C78;
+    color: #EAE1DF;
+    padding: 5px;
+    border-radius: 5px;
+}
+pre {
+    background-color: #917C78;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .post-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    code, pre {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .other-elements {
+        width: 100%;
+    }
+}
+
