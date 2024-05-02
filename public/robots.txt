@@ -1,0 +1,5 @@
+# Block all crawlers for /accounts
+User-agent: *
+Disallow: /accounts
+
+Sitemap: http://www.courtney.elsner.dev/sitemap.xml

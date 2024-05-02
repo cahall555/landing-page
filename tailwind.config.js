@@ -12,7 +12,7 @@ module.exports = {
 			brown: "#917C78",
 			"dark-green": "#545E56",
 			"light-green": "#667761",
-			rose: "#917C78",
+			rose: "#b79492",
 		},
 		extend: {
 			fontFamily: {
