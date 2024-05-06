@@ -1,5 +1,6 @@
 import "../styles/globals.css";
 import Head from "next/head";
+import Script from "next/script";
 
 import { Cinzel, Arapey, Bebas_Neue } from "next/font/google";
 
@@ -27,11 +28,28 @@ export default function MyApp({ Component, pageProps }) {
 			<Head>
 				<title>Portfolio</title>
 				<meta
+					viewport="width=device-width, initial-scale=1.0"
 					name="Portfolio"
 					content="Full-stack developer portfolio"
 				/>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
+
+			<Script
+				strategy="lazyOnload"
+				src={`https://www.googletagmanager.com/gtag/js?id=G-HKM15K0JWR`}
+			/>
+
+			<Script id="" strategy="lazyOnload">
+				{`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-HKM15K0JWR', {
+              page_path: window.location.pathname,
+              });
+          `}
+			</Script>
 
 			<div className={`${cinzel.variable} font-cinzel`}>
 				<div
