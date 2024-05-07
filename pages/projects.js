@@ -78,6 +78,39 @@ export default function Projects() {
 							an organization.
 						</p>
 					</div>
+					<div className="flex flex-col items-center w-full px-12 sm:px-32 pt-16 bg-background">
+						<h1 className="font-bebasneue text-2xl">
+							Company Website
+						</h1>
+						<h2 className="font-arapey text-center text-lg">
+							Next JS | Tailwind CSS |
+							Amplify
+						</h2>
+
+						<div className="flex flex-col sm:flex-row gap-11 mt-2">
+							<div className="flex flex-row gap-2">
+								<h2 className="font-bebasneue text-md sm:text-xl">
+									Website:
+								</h2>
+								<div className="font-bebasneue text-brown text-md sm:text-xl">
+									<a
+										href="https://connectivehorizons.com"
+										target="_blank"
+									>
+										Connective
+										Horizons
+									</a>
+								</div>
+							</div>
+						</div>
+						<p className="font-arapey mt-4 text-left">
+							This is an active
+							company website that
+							caters to small
+							businesses in the
+							Caribbean.
+						</p>
+					</div>
 
 					<div className="flex flex-col items-center w-full px-12 sm:px-32 pt-16 bg-background">
 						<h1 className="font-bebasneue text-2xl">
@@ -149,7 +182,7 @@ export default function Projects() {
 								</div>
 							</div>
 						</div>
-						<p className="font-arapey mt-4 text-left">
+						<p className="font-arapey mt-4 text-left pb-8">
 							Current work in progress
 							inspired by nonprofits
 							needing to collect and
@@ -159,39 +192,6 @@ export default function Projects() {
 							collected can be
 							confidential and time
 							sensitive.
-						</p>
-					</div>
-					<div className="flex flex-col items-center w-full px-12 sm:px-32 pt-16 bg-background pb-20">
-						<h1 className="font-bebasneue text-2xl">
-							Company Website
-						</h1>
-						<h2 className="font-arapey text-center text-lg">
-							Next JS | Tailwind CSS |
-							Amplify
-						</h2>
-
-						<div className="flex flex-col sm:flex-row gap-11 mt-2">
-							<div className="flex flex-row gap-2">
-								<h2 className="font-bebasneue text-md sm:text-xl">
-									Website:
-								</h2>
-								<div className="font-bebasneue text-brown text-md sm:text-xl">
-									<a
-										href="https://connectivehorizons.com"
-										target="_blank"
-									>
-										Connective
-										Horizons
-									</a>
-								</div>
-							</div>
-						</div>
-						<p className="font-arapey mt-4 text-left pb-8">
-							This is an active
-							company website that
-							caters to small
-							businesses in the
-							Caribbean.
 						</p>
 					</div>
 				</div>
