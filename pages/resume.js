@@ -53,19 +53,50 @@ export default function Resume() {
 								Objective
 							</h2>
 							<p className="font-arapey mt-4">
-								Detail-oriented,
-								organized and
-								meticulous
-								full-stack
-								developer. Works
-								at a fast pace
-								to meet tight
-								deadlines.
-								Enthusiastic
-								team player
-								ready to
-								contribute to
-								company success.
+								Technically-minded
+								professional
+								with diverse
+								experience in
+								full-stack web
+								development,
+								specializing in
+								designing,
+								implementing,
+								and optimizing
+								scalable
+								software
+								solutions.
+								Exceptional
+								talent for
+								collaborating
+								effectively with
+								cross-functional
+								teams to deliver
+								high-quality
+								software
+								products.
+								Skilled at
+								database
+								management,
+								using SQL and
+								NoSQL
+								technologies.
+								Adept at
+								optimizing
+								system
+								performance,
+								debugging
+								issues, and
+								ensuring
+								scalability of
+								applications.
+								Dedicated to
+								staying updated
+								with emerging
+								technologies and
+								best practices
+								in software
+								engineering.{" "}
 							</p>
 							<h1 className="font-bebasneue text-2xl border-b-2 mt-8">
 								Work Experience
@@ -86,33 +117,69 @@ export default function Resume() {
 								</h2>
 							</div>
 							<p className="font-arapey mt-4">
-								SaaS based
-								company working
-								to help small
-								businesses in
-								the Caribbean
-								expand their
-								online presence.
+								Consulted with
+								customers to
+								assess needs and
+								propose optimal
+								solutions while
+								managing
+								day-to-day
+								business
+								operations to
+								ensure smooth
+								and efficient
+								functioning{" "}
 							</p>
 							<div className="ml-8">
 								<ul className="font-arapey mt-4 list-disc list-outside">
 									<li>
-										Consulted
-										with
-										customers
-										to
-										assess
-										needs
+										Performed
+										comprehensive
+										technical
+										SEO
+										audits
+										for
+										prospective
+										clients,
+										enhancing
+										their
+										online
+										visibility
 										and
-										propose
-										optimal
-										solutions.
+										driving
+										increased
+										exposure
+										in
+										digital
+										spaces.{" "}
 									</li>
 									<li>
-										Managed
-										day-to-day
-										business
-										operations.
+										Designing
+										and
+										implementing
+										custom
+										mobile
+										application
+										utilizing
+										Flutter
+										and
+										GOlang.
+									</li>
+									<li>
+										Work
+										one
+										on
+										one
+										with
+										clients
+										to
+										build,
+										deploy
+										and
+										manaage
+										custom
+										web
+										pages.
 									</li>
 								</ul>
 							</div>
@@ -133,114 +200,149 @@ export default function Resume() {
 								</h2>
 							</div>
 							<p className="font-arapey mt-4">
-								Product Manager
-								for SaaS based
-								company. Report
-								to Chief
-								Executive
-								Officer and
-								Chief Technology
-								Officer.
+								Conducted
+								research on
+								third-party
+								APIs, drafted
+								specification
+								documents, and
+								collaborated
+								with software
+								developers to
+								implement new
+								integration
+								features. Led
+								project planning
+								and execution by
+								coordinating
+								with team
+								members and
+								leads,
+								prioritizing
+								roadmap to
+								attain product
+								goals and
+								metrics.
 							</p>
 							<div className="ml-8">
 								<ul className="font-arapey mt-4 list-disc list-outside">
 									<li>
-										Crafted
-										software
-										with
-										PHP
+										Designed
 										and
-										Laravel
-										for
-										retrieving
-										and
-										handling
-										data
-										from
-										APIs
-										to
-										aid
-										account
-										managers
-										and
-										support
-										teams
-										with
-										troubleshooting.
-									</li>
-									<li>
-										Created
+										implemented
+										efficient
 										ETL
 										processes
-										to
-										extract
+										for
+										retrieving
 										pricing
 										and
 										availability
 										data
 										from
 										external
-										APIs
-										and
-										load
-										information
-										into
+										APIs,
+										integrating
+										with
 										Engrain
 										SightMaps,
-										leveraging
+										using
 										Kubernetes,
 										Laravel,
-										PHP
+										PHP,
 										and
 										scheduled
 										cron
 										jobs
 										for
-										implementation.
+										seamless
+										implementation.{" "}
+									</li>
+									<li>
+										Developed
+										PHP
+										and
+										Laravel
+										software
+										to
+										retrieve
+										and
+										manage
+										API
+										data,
+										aiding
+										account
+										managers
+										and
+										support
+										teams
+										with
+										troubleshooting.{" "}
 									</li>
 									<li>
 										Researched
-										third
-										party
-										APIs,
-										create
-										specification
-										documents,
 										and
-										work
-										with
-										software
-										developers
-										to
-										develop
+										identified
+										third-party
+										data
+										for
 										new
-										integration
-										features.
-									</li>
-									<li>
-										Coordinated
-										project
-										planning
-										and
-										execution
-										with
-										team
-										members
-										and
-										team
-										leads.
-									</li>
-									<li>
-										Prioritized
-										roadmap
-										in
-										order
+										features,
+										including
+										creation
+										of
+										a
+										parking
+										map.
+										Developed
+										initial
+										custom
+										integrations
+										for
+										parkables
+										product,
+										actively
+										contributing
 										to
-										achieve
-										product
-										goals
+										its
+										V1.{" "}
+									</li>
+									<li>
+										Collaborated
+										one-on-one
+										with
+										clients
+										to
+										create
+										custom
+										maps
+										for
+										Power
+										BI
+										dashboards,
+										addressing
+										business
+										challenges
 										and
-										metrics.
+										automating
+										data
+										integration
+										for
+										overlay
+										on
+										the
+										maps.
+										Liaised
+										with
+										the
+										software
+										development
+										team
+										to
+										implement
+										client-specific
+										feature
+										requests{" "}
 									</li>
 								</ul>
 							</div>
