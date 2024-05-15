@@ -167,9 +167,7 @@ export default function Resume() {
 									</li>
 									<li>
 										Work
-										one
-										on
-										one
+										one-on-one
 										with
 										clients
 										to
