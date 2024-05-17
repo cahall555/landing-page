@@ -33,7 +33,7 @@ export default function Resume() {
 					<Header />
 					<div className="flex flex-col justify-center text-center pb-8 px-12">
 						<h1 className="font-bebasneue text-6xl mt-12 text-rose">
-							Software Developer
+							Software Engineer
 						</h1>
 						<h2 className="font-arapey text-lg sm:text-xl sm:font-semibold">
 							3 years Software
@@ -117,7 +117,7 @@ export default function Resume() {
 								</h2>
 							</div>
 							<p className="font-arapey mt-4">
-								Consulted with
+								Consult with
 								customers to
 								assess needs and
 								propose optimal
@@ -132,27 +132,6 @@ export default function Resume() {
 							</p>
 							<div className="ml-8">
 								<ul className="font-arapey mt-4 list-disc list-outside">
-									<li>
-										Performed
-										comprehensive
-										technical
-										SEO
-										audits
-										for
-										prospective
-										clients,
-										enhancing
-										their
-										online
-										visibility
-										and
-										driving
-										increased
-										exposure
-										in
-										digital
-										spaces.{" "}
-									</li>
 									<li>
 										Designing
 										and
@@ -178,6 +157,28 @@ export default function Resume() {
 										custom
 										web
 										pages.
+									</li>
+
+									<li>
+										Perform
+										comprehensive
+										technical
+										SEO
+										audits
+										for
+										prospective
+										clients,
+										enhancing
+										their
+										online
+										visibility
+										and
+										driving
+										increased
+										exposure
+										in
+										digital
+										spaces.{" "}
 									</li>
 								</ul>
 							</div>
