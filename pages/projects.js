@@ -132,8 +132,8 @@ export default function Projects() {
 										href="https://robandcourtney.com"
 										target="_blank"
 									>
-										USVI
-										Homestead
+										Infinite
+										Sunsets
 									</a>
 								</div>
 							</div>
@@ -145,7 +145,7 @@ export default function Projects() {
 							the U.S. Virgin Islands.
 						</p>
 					</div>
-					<div className="flex flex-col items-center w-full px-12 sm:px-32 pt-16 bg-background">
+					<div className="flex flex-col items-center w-full px-12 sm:px-32 pt-16 bg-background pb-16">
 						<h1 className="font-bebasneue text-2xl">
 							Document Manager
 						</h1>
@@ -168,21 +168,8 @@ export default function Projects() {
 									</a>
 								</div>
 							</div>
-							<div className="flex flex-row gap-2">
-								<h2 className="font-bebasneue text-md sm:text-xl">
-									Website:
-								</h2>
-								<div className="font-bebasneue text-brown text-md sm:text-xl">
-									<a
-										href="#"
-										target="_blank"
-									>
-										TBD
-									</a>
-								</div>
-							</div>
 						</div>
-						<p className="font-arapey mt-4 text-left pb-8">
+						<p className="font-arapey mt-4 text-left">
 							Current work in progress
 							inspired by nonprofits
 							needing to collect and
