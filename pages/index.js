@@ -239,7 +239,7 @@ export default function Home() {
 								</div>
 
 								<h1 className="text-center text-dark-green">
-									I'm
+									I&apos;m
 									interested
 									in
 									working
