@@ -2,7 +2,7 @@
 title: 'DateTime in Flutter and Golang'
 date: '2024-05-22'
 hero: '/blog/blackberry.jpg'
-excerpt: 'Working with date and time times between a Flutter frontend and Go backend.'
+excerpt: 'Working with date and time when sending API data from a Flutter frontend, to a Go backend.'
 ---
 
 I have been tripped up on date and time before. Understanding how to parse and format any data type is important, and lacking awareness of how a time and/or date value is being parsed or formatted can lead to a lot of frustration. I am no expert, but I think writing down a thought process can help organize ideas, and you, the reader, might have new ideas. In the example below I am taking a date entered by the end user on the frontend, and passing it through the API to the backend. The frontend is written using Flutter, and the backend is in Golang. 
