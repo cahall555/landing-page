@@ -230,7 +230,7 @@ export default function Home() {
 									/>
 								</div>
 								<div className="flex flex-col items-center justify-center my-4">
-									<Link href="/projects">
+									<Link className="no-underline" href="/projects">
 										<button className="flex flex-col bg-transparent text-brown font-cinzel text-center w-56 text-2xl py-2 px-4 border-2 border-dark-green hover:bg-dark-green hover:text-background">
 											More
 											Projects

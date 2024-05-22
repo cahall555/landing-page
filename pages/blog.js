@@ -93,7 +93,7 @@ export default function Blog({ allPostsData }) {
 													/>
 													<div className="flex flex-col gap-4">
 														<Link
-															className="font-cinzel font-semibold text-light-green text-2xl mt-6"
+															className="font-cinzel font-semibold no-underline text-light-green text-2xl mt-6"
 															href={
 																"/posts/[id]"
 															}

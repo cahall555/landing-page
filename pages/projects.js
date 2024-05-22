@@ -55,7 +55,7 @@ export default function Projects() {
 									GitHub:
 								</h2>
 								<div className="font-bebasneue text-brown text-md sm:text-xl">
-									<a
+									<a className="no-underline"
 										href="https://github.com/cahall555/documentation-cipher"
 										target="_blank"
 									>
@@ -93,7 +93,7 @@ export default function Projects() {
 									Website:
 								</h2>
 								<div className="font-bebasneue text-brown text-md sm:text-xl">
-									<a
+									<a className="no-underline"
 										href="https://connectivehorizons.com"
 										target="_blank"
 									>
@@ -128,7 +128,7 @@ export default function Projects() {
 									Website:
 								</h2>
 								<div className="font-bebasneue text-brown text-md sm:text-xl">
-									<a
+									<a className="no-underline"
 										href="https://robandcourtney.com"
 										target="_blank"
 									>
@@ -160,7 +160,7 @@ export default function Projects() {
 									GitHub:
 								</h2>
 								<div className="font-bebasneue text-brown text- md sm:text-xl">
-									<a
+									<a className="no-underline"
 										href="https://github.com/cahall555/document-management"
 										target="_blank"
 									>
