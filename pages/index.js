@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./components/header";
 import Footer from "./components/footer";
 import Image from "next/image";
@@ -28,6 +28,36 @@ export default function Home() {
 		],
 	};
 
+	const [zoomedImage, setZoomedImage] = useState({
+		url: null,
+		index: null,
+	});
+
+	const openZoomedImage = (imageUrl, index) => {
+		setZoomedImage({ url: imageUrl, index });
+	};
+
+	const closeZoomedImage = () => {
+		setZoomedImage({ url: null, index: null });
+	};
+
+	const images = [
+		{
+			id: 1,
+			imageUrl: "/blog/garden_db.png",
+			alt: "Garden Database",
+		},
+		{
+			id: 2,
+			imageUrl: "/blog/waterscheduleform.png",
+			alt: "Water Schedule Form",
+		},
+		{
+			id: 3,
+			imageUrl: "/blog/gardenlist.png",
+			alt: "List of Gardens",
+		},
+	];
 	return (
 		<>
 			<div className="h-screen w-full mx-auto bg-background">
@@ -157,7 +187,9 @@ export default function Home() {
 									I am
 									currently
 									working
-									on my first verison
+									on my
+									first
+									verison
 									of this
 									project
 									which is
@@ -192,45 +224,88 @@ export default function Home() {
 									garden.
 								</p>
 								<div className="flex flex-col md:flex-row gap-4 sm:gap-8 items-center justify-center mb-4">
-									<Image
-										className="z-0"
-										loading="eager"
-										src="/blog/garden_db.png"
-										alt="Garden Database"
-										width={
-											400
-										}
-										height={
-											400
-										}
-									/>
-									<Image
-										className="z-0"
-										loading="eager"
-										src="/blog/waterscheduleform.png"
-										alt="Water Schedule Form"
-										width={
-											200
-										}
-										height={
-											200
-										}
-									/>
-									<Image
-										className="z-0"
-										loading="eager"
-										src="/blog/gardenlist.png"
-										alt="List of Gardens"
-										width={
-											200
-										}
-										height={
-											200
-										}
-									/>
+									{images.map(
+										(
+											item,
+											index
+										) => (
+											<div
+												key={
+													item.id
+												}
+												onClick={() =>
+													openZoomedImage(
+														item.imageUrl,
+														index
+													)
+												}
+											>
+												<Image
+													className="z-0"
+													loading="eager"
+													src={
+														item.imageUrl
+													}
+													alt={
+														item.alt
+													}
+													width={
+														index ===
+														0
+															? 400
+															: 200
+													}
+													height={
+														index ===
+														0
+															? 400
+															: 200
+													}
+												/>
+											</div>
+										)
+									)}
+									{zoomedImage &&
+										zoomedImage.url && (
+											<div
+												className="zoomed-image-container"
+												onClick={
+													closeZoomedImage
+												}
+											>
+												{console.log(
+													"Zoomed Image Index:",
+													zoomedImage.index
+												)}
+												<Image
+													className="z-0"
+													loading="eager"
+													src={
+														zoomedImage.url
+													}
+													alt="Zoomed Image"
+													width={
+														zoomedImage.index ===
+														0
+															? 800
+															: 400
+													}
+													height={
+														zoomedImage.index ===
+														0
+															? 800
+															: 400
+													}
+												/>
+											</div>
+										)}
 								</div>
+
 								<div className="flex flex-col items-center justify-center my-4">
-									<Link className="no-underline" href="/projects">
+									<Link
+										className="no-underline"
+										href="/projects"
+									>
 										<button className="flex flex-col bg-transparent text-brown font-cinzel text-center w-56 text-2xl py-2 px-4 border-2 border-dark-green hover:bg-dark-green hover:text-background">
 											More
 											Projects
