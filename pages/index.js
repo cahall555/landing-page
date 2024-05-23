@@ -115,7 +115,7 @@ export default function Home() {
 									Passion
 									Project
 								</h1>
-								<p className="font-arapey text-left text-brown text-lg mt-2">
+								<p className="font-arapey text-left text-dark-green text-lg mt-2">
 									I am
 									currently
 									working
@@ -320,7 +320,7 @@ export default function Home() {
 									working
 									with you
 								</h1>
-								<p className="font-arapey text-brown text-lg mt-2">
+								<p className="font-arapey text-dark-green text-lg mt-2">
 									I find a
 									great
 									deal of

@@ -31,7 +31,7 @@ export default function Resume() {
 					<div className="absolute right-20 top-0 h-full md:border-r-2 border-light-green"></div>
 
 					<Header />
-					<div className="flex flex-col justify-center text-center pb-8 px-12">
+					<div className="flex flex-col justify-center text-brown text-center pb-8 px-12">
 						<h1 className="font-bebasneue text-6xl mt-12 text-rose">
 							Software Engineer
 						</h1>
@@ -47,7 +47,7 @@ export default function Resume() {
 							Auditing
 						</h2>
 					</div>
-					<div className="flex flex-col sm:flex-row justify-items-center bg-background pb-20">
+					<div className="flex flex-col sm:flex-row justify-items-center text-dark-green bg-background pb-20">
 						<div className="flex flex-col mt-8 px-12 sm:px-32">
 							<h2 className="font-bebasneue text-2xl border-b-2">
 								Objective
@@ -142,7 +142,7 @@ export default function Resume() {
 										utilizing
 										Flutter
 										and
-										GOlang.
+										Golang.
 									</li>
 									<li>
 										Work
