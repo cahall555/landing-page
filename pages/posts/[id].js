@@ -56,7 +56,7 @@ export default function Post({ content, postData, id }) {
 						</div>
 					</div>
 
-					<div className="text-brown font-arapey text-md md:text-2xl justify-center px-12 md:px-32 pb-20">
+					<div className="text-dark-green font-arapey text-md md:text-2xl justify-center px-12 md:px-32 pb-20">
 						<ReactMarkdown
 							remarkPlugins={[
 								remarkGfm,

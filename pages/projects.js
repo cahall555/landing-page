@@ -39,7 +39,7 @@ export default function Projects() {
 						Projects
 					</h1>
 
-					<div className="flex flex-col items-center w-full px-12 sm:px-32 pt-16 bg-background">
+					<div className="flex flex-col items-center w-full text-dark-green px-12 sm:px-32 pt-16 bg-background">
 						<h1 className="font-bebasneue text-2xl">
 							AI Documentation Chatbot
 						</h1>
@@ -64,7 +64,7 @@ export default function Projects() {
 								</div>
 							</div>
 						</div>
-						<p className="font-arapey mt-4 text-left">
+						<p className="font-arapey mt-4 text-left text-lg">
 							This tool is designed to
 							allow employees to query
 							company documentation as
@@ -78,7 +78,7 @@ export default function Projects() {
 							an organization.
 						</p>
 					</div>
-					<div className="flex flex-col items-center w-full px-12 sm:px-32 pt-16 bg-background">
+					<div className="flex flex-col items-center w-full text-dark-green px-12 sm:px-32 pt-16 bg-background">
 						<h1 className="font-bebasneue text-2xl">
 							Company Website
 						</h1>
@@ -103,7 +103,7 @@ export default function Projects() {
 								</div>
 							</div>
 						</div>
-						<p className="font-arapey mt-4 text-left">
+						<p className="font-arapey mt-4 text-left text-lg">
 							This is an active
 							company website that
 							caters to small
@@ -112,7 +112,7 @@ export default function Projects() {
 						</p>
 					</div>
 
-					<div className="flex flex-col items-center w-full px-12 sm:px-32 pt-16 bg-background">
+					<div className="flex flex-col items-center w-full px-12 text-dark-green sm:px-32 pt-16 bg-background">
 						<h1 className="font-bebasneue text-2xl">
 							Blog
 						</h1>
@@ -138,14 +138,14 @@ export default function Projects() {
 								</div>
 							</div>
 						</div>
-						<p className="font-arapey mt-4 text-left">
+						<p className="font-arapey mt-4 text-left text-lg">
 							This blog was created to
 							document ongoing
 							experiences living in
 							the U.S. Virgin Islands.
 						</p>
 					</div>
-					<div className="flex flex-col items-center w-full px-12 sm:px-32 pt-16 bg-background pb-16">
+					<div className="flex flex-col items-center w-full px-12 text-dark-green sm:px-32 pt-16 bg-background pb-16">
 						<h1 className="font-bebasneue text-2xl">
 							Document Manager
 						</h1>
@@ -169,7 +169,7 @@ export default function Projects() {
 								</div>
 							</div>
 						</div>
-						<p className="font-arapey mt-4 text-left">
+						<p className="font-arapey mt-4 text-left text-lg">
 							Current work in progress
 							inspired by nonprofits
 							needing to collect and
