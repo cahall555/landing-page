@@ -55,7 +55,7 @@ export default function Blog({ allPostsData }) {
 					<Header />
 					<div className="flex flex-col bg-background">
 						<h2 className="font-bebasneue text-6xl text-dark-green mt-16 text-center">
-							Logic Layer
+							Logical Musings
 						</h2>
 						<div className="flex flex-col md:flex-row text-brown font-cinzel text-5xl mt-16 gap-16 px-12 md:px-32 pb-32">
 							<section>

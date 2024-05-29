@@ -59,7 +59,7 @@ I could be missing something, but perhaps there isn't a way without hand rolling
 | Using the language standard, and not creating custom structs, can help with long-term maintenance, and enforce best practices especially if the data is not incorrect. | Having an unused time stamp in the database may create confusion when people join the project. Why would it be there if were not going to use it now?|
 | The more data provided the more formatting options are available.    |    |
 
-This list could be incomplete, but I ultimately decided, at least for now, to keep the time value, and correct the date as it is passed from the frontend to accommodate the needs of the backend. The nice thing about frontend date formatting is that as long as the data is there, the developer has a lot of options when it comes to how to present a date to the end user. The function below is the one I am currently using to format the date on the frontend. I start by guarding against a null date, and then checking to see if it contains a zero value date. The year being zero appears to be a common thread between Go and Dart.  
+This list could be incomplete, but I decided to keep the time value, and correct the date as it is passed from the frontend to accommodate the needs of the backend. The nice thing about frontend date formatting is that as long as the data is there, the developer has a lot of options when it comes to how to present a date to the end user. The function below is the one I am currently using to format the date on the frontend. I start by guarding against a null date, and then checking to see if it contains a zero value date. The year being zero appears to be a common thread between Go and Dart.  
 
 ```dart
   String formatDate(DateTime? date) { 
@@ -74,4 +74,26 @@ This list could be incomplete, but I ultimately decided, at least for now, to ke
    }
 ```
 
+The observation finding the year set to zero can be seen when reviewing the database and API. Empty dates coming from Go look like this:
+```json
+{
+"date_planted":"0001-01-01T00:00:00Z",
+"date_germinated":"0001-01-01T00:00:00Z",
+}
+```
 
+While Dart is interpreting an empty date to look like the json below. The year is set to zero, however, the month and day are set to December 31st. The timestamp is also populated, which is not the case in Go.
+```json
+{
+"date_planted":"0000-12-31T19:35:35-04:24",
+"date_germinated":"0000-12-31T19:35:35-04:24",
+}
+```
+Given the concerns above about time, it is worth noting that when a date is populated, the timestamp in Dart changes to zero, which is what I would expect, and more accurately reflects what is happening on the backend.
+```json
+{
+"date_planted":"2024-05-27T00:00:00.000Z",
+"date_germinated":"0000-12-31T23:59:35.000Z"
+}
+```
+These discrepancies can create confusion in the long term maintenance of the application. I think a good solution is to write tests and document this behavior.

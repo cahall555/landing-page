@@ -136,6 +136,7 @@ export default function Resume() {
 										Designing
 										and
 										implementing
+										a
 										custom
 										mobile
 										application
@@ -153,7 +154,7 @@ export default function Resume() {
 										build,
 										deploy
 										and
-										manaage
+										manage
 										custom
 										web
 										pages.
