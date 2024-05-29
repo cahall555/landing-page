@@ -22,7 +22,7 @@ const Header = () => {
 						</Link>
 					</h2>
 					<h2 className="font-bebasneue border-t-2 border-dark-green pt-4">
-						<Link className="no-underline" href="/blog">Logic Layer</Link>
+						<Link className="no-underline" href="/blog">Logical Musings</Link>
 					</h2>
 
 					<h2 className="hidden font-bebasneue border-t-2 border-dark-green pt-4">
