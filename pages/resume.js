@@ -128,7 +128,7 @@ export default function Resume() {
 								operations to
 								ensure smooth
 								and efficient
-								functioning{" "}
+								functioning.{" "}
 							</p>
 							<div className="ml-8">
 								<ul className="font-arapey mt-4 list-disc list-outside">
@@ -342,7 +342,7 @@ export default function Resume() {
 										implement
 										client-specific
 										feature
-										requests{" "}
+										requests.{" "}
 									</li>
 								</ul>
 							</div>
