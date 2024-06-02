@@ -38,6 +38,49 @@ export default function Projects() {
 					<h1 className="font-bebasneue text-center text-6xl mt-12 text-light-green">
 						Projects
 					</h1>
+					<div className="flex flex-col items-center w-full text-dark-green px-12 sm:px-32 pt-16 bg-background">
+						<h1 className="font-bebasneue text-2xl">
+							Mobile Garden
+							Application
+						</h1>
+						<h2 className="font-arapey text-center text-lg">
+							Go Buffalo | Flutter |
+							Docker | PostgreSQL
+						</h2>
+
+						<div className="flex flex-col sm:flex-row gap-11 mt-2">
+							<div className="flex flex-row gap-2">
+								<h2 className="font-bebasneue text-md sm:text-xl">
+									GitHub:
+								</h2>
+								<div className="font-bebasneue text-brown text-md sm:text-xl">
+									<a
+										className="no-underline"
+										href="https://github.com/cahall555/garden"
+										target="_blank"
+									>
+										https://github.com/cahall555/garden
+									</a>
+								</div>
+							</div>
+						</div>
+						<p className="font-arapey mt-4 text-left text-lg">
+							Avid gardeners
+							frequently keep a
+							journal to document
+							their garden&apos;s
+							progress. This mobile
+							application allows
+							gardeners to track the
+							progress of their
+							garden. The objective is
+							to make this a data
+							driven application that
+							will provide insights to
+							gardeners on how to
+							improve their garden.
+						</p>
+					</div>
 
 					<div className="flex flex-col items-center w-full text-dark-green px-12 sm:px-32 pt-16 bg-background">
 						<h1 className="font-bebasneue text-2xl">
@@ -55,7 +98,8 @@ export default function Projects() {
 									GitHub:
 								</h2>
 								<div className="font-bebasneue text-brown text-md sm:text-xl">
-									<a className="no-underline"
+									<a
+										className="no-underline"
 										href="https://github.com/cahall555/documentation-cipher"
 										target="_blank"
 									>
@@ -93,7 +137,8 @@ export default function Projects() {
 									Website:
 								</h2>
 								<div className="font-bebasneue text-brown text-md sm:text-xl">
-									<a className="no-underline"
+									<a
+										className="no-underline"
 										href="https://connectivehorizons.com"
 										target="_blank"
 									>
@@ -112,39 +157,6 @@ export default function Projects() {
 						</p>
 					</div>
 
-					<div className="flex flex-col items-center w-full px-12 text-dark-green sm:px-32 pt-16 bg-background">
-						<h1 className="font-bebasneue text-2xl">
-							Blog
-						</h1>
-						<h2 className="font-arapey text-center text-lg">
-							Metalsmith | Tailwind
-							CSS | Amazon S3 |
-							Firebase
-						</h2>
-
-						<div className="flex flex-col sm:flex-row gap-11 mt-2">
-							<div className="flex flex-row gap-2">
-								<h2 className="font-bebasneue text-md sm:text-xl">
-									Website:
-								</h2>
-								<div className="font-bebasneue text-brown text-md sm:text-xl">
-									<a className="no-underline"
-										href="https://robandcourtney.com"
-										target="_blank"
-									>
-										Infinite
-										Sunsets
-									</a>
-								</div>
-							</div>
-						</div>
-						<p className="font-arapey mt-4 text-left text-lg">
-							This blog was created to
-							document ongoing
-							experiences living in
-							the U.S. Virgin Islands.
-						</p>
-					</div>
 					<div className="flex flex-col items-center w-full px-12 text-dark-green sm:px-32 pt-16 bg-background pb-16">
 						<h1 className="font-bebasneue text-2xl">
 							Document Manager
@@ -160,7 +172,8 @@ export default function Projects() {
 									GitHub:
 								</h2>
 								<div className="font-bebasneue text-brown text- md sm:text-xl">
-									<a className="no-underline"
+									<a
+										className="no-underline"
 										href="https://github.com/cahall555/document-management"
 										target="_blank"
 									>
