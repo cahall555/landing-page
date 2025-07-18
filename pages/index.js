@@ -110,7 +110,7 @@ export default function Home() {
 									| Web
 									Development
 								</p>
-								<h1 class="text-center text-rose">
+								<h1 className="text-center text-rose">
 									Current
 									Passion
 									Project
