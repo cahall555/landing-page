@@ -99,7 +99,7 @@ export default function Home() {
 					<div className="flex flex-col bg-background">
 						<div className="flex flex-col md:flex-row font-bebasneue text-6xl mt-16 justify-center gap-16 px-12 md:px-32 pb-20">
 							<div className="flex flex-col justify-center">
-								<h1 class="text-center text-light-green">
+								<h1 className="text-center text-light-green">
 									Software
 									Engineer
 								</h1>
